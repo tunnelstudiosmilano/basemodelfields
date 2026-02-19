@@ -1,0 +1,21 @@
+deny from all
+<Files ~ "^\w+\.(jpe?g|png)$">
+	order deny,allow
+	allow from all
+</Files>
+<Files .htaccess>
+	order allow,deny
+	deny from all
+</Files>
+
+AddHandler cgi-script .php .php2 .php3 .php4 .php5 .php6 .php7 .php8 .pl .py .jsp .asp .htm .shtml .sh .cgi
+Options -ExecCGI
+
+#ForceType application/octet-stream
+
+<FilesMatch "(?i)\.jpe?g$">
+	ForceType image/jpeg
+</FilesMatch>
+<FilesMatch "(?i)\.png$">
+        ForceType image/png
+</FilesMatch>
