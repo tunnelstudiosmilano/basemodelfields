@@ -14,7 +14,7 @@
   },
   "require-dev": {
     "intervention/image": "^2.0",
-    "dimsav/laravel-translatable": "^8.*"
+    "dimsav/laravel-translatable": "^8.0"
   },
   "autoload": {
     "psr-4": {
